@@ -11,9 +11,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 <table>
   <tr>
     <td> <img src="./screenshot/ss1.png"  alt="1" width = 360px height = 640px ></td>
-
-    <td><img src="./screenshot/ss2.png" alt="2" width = 360px height = 640px></td>
-      <td><img src="./screenshot/ss3.png" alt="3" width = 360px height = 640px></td>
+    <td> <img src="./screenshot/ss2.png" alt="2" width = 360px height = 640px></td>
+    <td> <img src="./screenshot/ss3.png" alt="3" width = 360px height = 640px></td>
    </tr> 
  
 </table>
