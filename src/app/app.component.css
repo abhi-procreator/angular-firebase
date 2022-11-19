@@ -1,0 +1,9 @@
+a{
+    color: aliceblue;
+}
+
+a:hover{
+   color: aliceblue;
+   font-weight: 600;
+   cursor: pointer;
+}

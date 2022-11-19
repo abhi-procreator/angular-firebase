@@ -1,0 +1,35 @@
+
+<p>Winner Details</p>
+
+<hr>
+<div *ngIf="isDataAssign">
+     <mat-table [dataSource]="winnersArray">
+        <!-- Users Id  -->
+        <ng-container matColumnDef="userId">
+            <mat-header-cell *matHeaderCellDef> <strong>User ID</strong> </mat-header-cell>
+            <mat-cell *matCellDef="let data"> {{data.userId}} </mat-cell>
+        </ng-container>
+        <!-- Users name  -->
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef><strong>Users Name</strong> </mat-header-cell>
+            <mat-cell *matCellDef="let data"> {{data.name}} </mat-cell>
+        </ng-container>
+    
+        <!-- Age  -->
+        <ng-container matColumnDef="age">
+            <mat-header-cell *matHeaderCellDef><strong> Age </strong></mat-header-cell>
+            <mat-cell *matCellDef="let data"> {{data.age}} </mat-cell>
+        </ng-container>
+    
+        <!-- Scores -->
+        <ng-container matColumnDef="scores">
+            <mat-header-cell *matHeaderCellDef><strong>Scores</strong> </mat-header-cell>
+            <mat-cell *matCellDef="let data"> {{data.scores}} </mat-cell>
+        </ng-container>
+    
+        <!-- Header and Row  -->
+        <mat-header-row *matHeaderRowDef="['userId','name', 'age', 'scores']"></mat-header-row>
+        <mat-row *matRowDef="let uData; columns: ['userId','name', 'age', 'scores']"></mat-row>
+    </mat-table> 
+    <div *ngIf="winnersArray.length==0" class="text-center"><p>No Data Available  !</p></div>
+</div>
